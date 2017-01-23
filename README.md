@@ -7,5 +7,42 @@ Git is the preferred VCS. Unless there is a technical reason it is unsuited, eve
 ##Branches
 A feature or fix branch name includes the identifier of the task it is related to (JIRA or otherwise), to facilitate hooks and to make work traceable in both directions. Start branch name with fix/ or feature/, followed by the task name separated by hyphens. E.g. `feature/NR-123-name-of-task`.
 
+##Commits
+A git commit message should have  
+Title: 
+`JIRA-REF: What did you do / which changes did you make`  
+Description (Optional, suggested for non-trivial commits): 
+`Motivation for task and why did you do it this way.`
+
+Occasional small changes may not have an associated task, such as bumping version number or updating README. It is suggested, but not required, to use simple domain identifiers for these, to keep the format similar, e.g. `Fastlane`, `Readme`, `Xcode`.
+
+Examples
+```
+BAXAPP-94: Change format of public key / ebaxtoken
+
+Server expects public key to be in base64 instead of hex
+```
+```
+BAXAPP-76: Change text in label on home screen
+
+We should use "Touch ID / PIN" concistently throughout the app
+```
+```
+IVYA-123: Change pager opening animation: slide in from right rather than bottom
+```
+```
+Fastlane: Disable use_legacy_build_api
+
+This makes app size go from 60mb to 9mb
+```
+```
+Readme: Added section explaining the Alertify feature
+```
+```
+Xcode: Updating xcode project files
+
+Opening the project in Xcode 8.2.1 made these changes automatically
+```
+
 ## Do not check in commented out code
 Don't do it
