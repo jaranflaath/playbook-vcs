@@ -9,10 +9,12 @@ A feature or fix branch name includes the identifier of the task it is related t
 
 ##Commits
 A git commit message should have  
-Title: `JIRA-REF: What did you do / which changes did you make`  
-Description: `Motivation for task and why did you do it in this way.`
+Title: 
+`JIRA-REF: What did you do / which changes did you make`  
+Description (Optional, suggested for non-trivial commits): 
+`Motivation for task and why did you do it this way.`
 
-Where there's no specific jira task you may use domain identifiers like `Fastlane`, `Readme`, `Xcode`.
+Occasional small changes may not have an associated task, such as bumping version number or updating README. It is suggested, but not required, to use simple domain identifiers for these, to keep the format similar, e.g. `Fastlane`, `Readme`, `Xcode`.
 
 Examples
 ```
@@ -26,9 +28,15 @@ BAXAPP-76: Change text in label on home screen
 We should use "Touch ID / PIN" concistently throughout the app
 ```
 ```
+IVYA-123: Change pager opening animation: slide in from right rather than bottom
+```
+```
 Fastlane: Disable use_legacy_build_api
 
 This makes app size go from 60mb to 9mb
+```
+```
+Readme: Added section explaining the Alertify feature
 ```
 ```
 Xcode: Updating xcode project files
