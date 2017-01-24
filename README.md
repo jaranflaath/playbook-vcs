@@ -9,9 +9,9 @@ A feature or fix branch name includes the identifier of the task it is related t
 
 ##Commits
 A git commit message should have  
-Title: 
+Title:
 `JIRA-REF: What did you do / which changes did you make`  
-Description (Optional, suggested for non-trivial commits): 
+Description (Optional, suggested for non-trivial commits):
 `Motivation for task and why did you do it this way.`
 
 Occasional small changes may not have an associated task, such as bumping version number or updating README. It is suggested, but not required, to use simple domain identifiers for these, to keep the format similar, e.g. `Fastlane`, `Readme`, `Xcode`.
@@ -45,4 +45,9 @@ Opening the project in Xcode 8.2.1 made these changes automatically
 ```
 
 ## Do not check in commented out code
+
 Don't do it
+
+
+## License
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"><a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" /></a><br />To the extent possible under law, <a rel="dct:publisher" href="http://agens.no"><span property="dct:title">Agens AS</span></a>has waived all copyright and related or neighboring rights to<span property="dct:title">Playbook-vcs</span>. This work is published from: <span property="vcard:Country" datatype="dct:ISO3166" content="NO" about="http://agens.no">Norway</span>.</p>
