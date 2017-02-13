@@ -5,7 +5,7 @@ Version Control System Playbook
 Git is the preferred VCS. Unless there is a technical reason it is unsuited, every code project should be in a git repository.
 
 ##Branches
-A feature or fix branch name includes the identifier of the task it is related to (JIRA or otherwise), to facilitate hooks and to make work traceable in both directions. Start branch name with fix/ or feature/, followed by the task name separated by hyphens. E.g. `feature/NR-123-name-of-task`.
+A feature or fix branch name consists of the identifier of the task it is related to (JIRA or otherwise), to facilitate hooks and to make work traceable in both directions. Start branch name with fix/ or feature/, followed by the task id separated by hyphens. E.g. `feature/NR-123`. Release branches are named on the format of `release/1.5.1`.
 
 ##Commits
 A git commit message should have  
