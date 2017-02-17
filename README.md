@@ -18,17 +18,17 @@ Occasional small changes may not have an associated task, such as bumping versio
 
 Examples
 ```
-BAXAPP-94: Change format of public key / ebaxtoken
+ACME-94: Change format of public key / acmetoken
 
 Server expects public key to be in base64 instead of hex
 ```
 ```
-BAXAPP-76: Change text in label on home screen
+ACME-76: Change text in label on home screen
 
 We should use "Touch ID / PIN" concistently throughout the app
 ```
 ```
-IVYA-123: Change pager opening animation: slide in from right rather than bottom
+ACME-123: Change pager opening animation: slide in from right rather than bottom
 ```
 ```
 Fastlane: Disable use_legacy_build_api
