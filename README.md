@@ -5,7 +5,28 @@ Version Control System Playbook
 Git is the preferred VCS. Unless there is a technical reason it is unsuited, every code project should be in a git repository.
 
 ##Branches
-A feature or fix branch name consists of the identifier of the task it is related to (JIRA or otherwise), to facilitate hooks and to make work traceable in both directions. Start branch name with fix/ or feature/, followed by the task id separated by hyphens. E.g. `feature/NR-123`. Release branches are named on the format of `release/1.5.1`.
+Our branching is git-flow-like:
+* one master branch where HEAD is most recent completed development 
+* feature-branches
+ * branch from master
+ * created for each task, whether it is feature, story, improvement, fix or what-have-you
+ * merge into master once task is complete and verified by the project's test/qa/code review
+* release-branches
+ * branch from master
+ * created when starting the process of promoting a release candidate to actual release
+ * if it is necessary to make adjustments to build files or similar for a release, such adjustments are done on this branch, so that they are not part of master history if for some reason the release is never completed
+ * once build is actually released, tag with release version and merge into master
+* hotfix-branches 
+ * branch from release-branches
+ * created if an issue that must be fixed is discovered after release process is started
+ * merge into release-branch and into master branch
+ 
+A notable difference from git-flow as originally outlined (http://nvie.com/posts/a-successful-git-branching-model/) is that we use master for development rather than have a separate develop branch and using master for archiving most recent release. This is because the version tags provide sufficient archival information and the further benefit described by Driessen, of allowing automatic roll-out from each commit on master, is rarely, if ever, useful to us.
+
+*Note: All branches apart from master should strive to be shortlived to minimize conflicts and attendand problems when merging.*
+
+### Branch names
+A feature or hotfix branch name consists of the identifier of the task it is related to (JIRA or otherwise), to facilitate hooks and to make work traceable in both directions. Start branch name with feature/ or hotfix/, followed by the task id separated by hyphens: `feature/ACME-123`. Release branches are named release/&lt;version number&gt;: `release/1.5.1`.
 
 ##Commits
 A git commit message should have  
