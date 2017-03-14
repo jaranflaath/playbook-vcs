@@ -8,19 +8,19 @@ Git is the preferred VCS. Unless there is a technical reason it is unsuited, eve
 Our branching is git-flow-like:
 * one master branch where HEAD is most recent completed development 
 * feature-branches
- * branch from master
- * created for each task, whether it is feature, story, improvement, fix or what-have-you
- * merge into master once task is complete and verified by the project's test/qa/code review
+    * branch from master
+    * created for each task, whether it is feature, story, improvement, fix or what-have-you
+    * merge into master once task is complete and verified by the project's test/qa/code review
 * release-branches
- * branch from master
- * created if necessary: 
-   - if a release candidate is built, but a critical bugfix or other change needs to be included in the release _and_ further development which was not intended for this release has happened on the master branch
-   - if an issue is discovered in a released build which needs to be addressed immediately, _and_ there are changes on the master branch which are not ready for release (e.g. requires changes to server code not scheduled for deploy yet)
- * once build is actually released, merge into master
+    * branch from master
+    * created if necessary: 
+        * if a release candidate is built, but a critical bugfix or other change needs to be included in the release _and_ further development which was not intended for this release has happened on the master branch
+        * if an issue is discovered in a released build which needs to be addressed immediately, _and_ there are changes on the master branch which are not ready for release (e.g. requires changes to server code not scheduled for deploy yet)
+    * once build is actually released, merge into master
 * hotfix-branches 
- * branch from release-branches
- * created if an issue that must be fixed is discovered after release process is started
- * merge into release-branch and into master branch
+    * branch from release-branches
+    * created if an issue that must be fixed is discovered after release process is started
+    * merge into release-branch and into master branch
 * For each build actually released, tag the commit that build was created from
  
 A notable difference from git-flow as originally outlined (http://nvie.com/posts/a-successful-git-branching-model/) is that we use master for development rather than have a separate develop branch and using master for archiving most recent release. This is because the version tags provide sufficient archival information and the further benefit described by Driessen, of allowing automatic roll-out from each commit on master, is rarely, if ever, useful to us.
