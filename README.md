@@ -13,13 +13,13 @@ Our branching is git-flow-like:
  * merge into master once task is complete and verified by the project's test/qa/code review
 * release-branches
  * branch from master
- * created when starting the process of promoting a release candidate to actual release
- * if it is necessary to make adjustments to build files or similar for a release, such adjustments are done on this branch, so that they are not part of master history if for some reason the release is never completed
- * once build is actually released, tag with release version and merge into master
+ * created if necessary: if a release candidate is built, but a critical bugfix or other change needs to be included in the release _and_ further development which was not intended for this release has happened on the master branch
+ * once build is actually released, merge into master
 * hotfix-branches 
  * branch from release-branches
  * created if an issue that must be fixed is discovered after release process is started
  * merge into release-branch and into master branch
+* For each build actually released, tag the commit that build was created from
  
 A notable difference from git-flow as originally outlined (http://nvie.com/posts/a-successful-git-branching-model/) is that we use master for development rather than have a separate develop branch and using master for archiving most recent release. This is because the version tags provide sufficient archival information and the further benefit described by Driessen, of allowing automatic roll-out from each commit on master, is rarely, if ever, useful to us.
 
