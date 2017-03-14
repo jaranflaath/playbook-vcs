@@ -13,7 +13,9 @@ Our branching is git-flow-like:
  * merge into master once task is complete and verified by the project's test/qa/code review
 * release-branches
  * branch from master
- * created if necessary: if a release candidate is built, but a critical bugfix or other change needs to be included in the release _and_ further development which was not intended for this release has happened on the master branch
+ * created if necessary: 
+   - if a release candidate is built, but a critical bugfix or other change needs to be included in the release _and_ further development which was not intended for this release has happened on the master branch
+   - if an issue is discovered in a released build which needs to be addressed immediately, _and_ there are changes on the master branch which are not ready for release (e.g. requires changes to server code not scheduled for deploy yet)
  * once build is actually released, merge into master
 * hotfix-branches 
  * branch from release-branches
