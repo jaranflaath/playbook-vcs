@@ -1,10 +1,10 @@
 # playbook-vcs
 Version Control System Playbook
 
-#Git
+# Git
 Git is the preferred VCS. Unless there is a technical reason it is unsuited, every code project should be in a git repository.
 
-##Branches
+## Branches
 Our branching is git-flow-like:
 * one master branch where HEAD is most recent completed development 
 * feature-branches
@@ -30,7 +30,7 @@ A notable difference from git-flow as originally outlined (http://nvie.com/posts
 ### Branch names
 A feature or hotfix branch name consists of the identifier of the task it is related to (JIRA or otherwise), to facilitate hooks and to make work traceable in both directions. Start branch name with feature/ or hotfix/, followed by the task id separated by hyphens: `feature/ACME-123`. Release branches are named release/&lt;version number&gt;: `release/1.5.1`.
 
-##Commits
+## Commits
 A git commit message should have  
 Title:
 `JIRA-REF: What did you do / which changes did you make`  
