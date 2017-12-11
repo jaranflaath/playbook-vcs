@@ -74,7 +74,7 @@ All code goes through pull requests before they are merged to development or rel
 ### Workflow for pull requests
 
 1. Submitter
-   1. Suqash commits into one or more logical commits outlining the changes you have made in your feature branch. Your pull request should contain as few commits as possible. 
+   1. Squash commits into one or more logical commits outlining the changes you have made in your feature branch. Your pull request should contain as few commits as possible. 
    1. Submit pull request and add all your relevant team members as reviewers (if you work on the Android version of an application, add all the Android developers on your team to the pull request). You should also add any non-project resources that you know will have input on your change. I.e. if you have made some changes to to the authentication code of your project, you can add resources that you know are experts in this field to get their eyes on your changes as well.
 1. Reviewer
    1. Perform your code review (to be added: link to checklist / guidelines for performing a good code review)
