@@ -67,6 +67,25 @@ Xcode: Updating xcode project files
 Opening the project in Xcode 8.2.1 made these changes automatically
 ```
 
+## Pull requests
+
+All code goes through pull requests before they are merged to development or release branches. Pull requests is a good way to both get a second pair of eyes on your code, and to spread knowledge about changes done in the projects. All team members should be added to all pull requests, both to spread visibility of the changes made, and to spread the workload of doing the reviews. 
+
+### Workflow for pull requests
+
+1. Submitter
+   1. Suqash commits into one or more logical commits outlining the changes you have made in your feature branch. Your pull request should contain as few commits as possible. 
+   1. Submit pull request and add all your relevant team members as reviewers (if you work on the Android version of an application, add all the Android developers on your team to the pull request). You should also add any non-project resources that you know will have input on your change. I.e. if you have made some changes to to the authentication code of your project, you can add resources that you know are experts in this field to get their eyes on your changes as well.
+1. Reviewer
+   1. Perform your code review (to be added: link to checklist / guidelines for performing a good code review)
+   1. When done, 
+      * if there are things that needs the submitter's attention before the pull request can be merged, post a comment informing the submitter that you want your comments to be looked at before the pull request is merged. 
+      * if there are no comments, merge the pull request and ignore the rest of this list
+1. Submitter
+   1. Wait until the reviewer(s) explicitly comments that their round of review is done, to prevent both reviewing and updating of the code happening at the same time
+   1. Review and perform any changes requested by the reviewer(s).
+   1. Commit all your changes as _one_ commit, this makes it much easier for the reviewer(s) to review the updates 
+
 ## Do not check in commented out code
 
 Don't do it
