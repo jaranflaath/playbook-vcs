@@ -85,6 +85,8 @@ All code goes through pull requests before they are merged to development or rel
    1. Wait until the reviewer(s) explicitly comments that their round of review is done, to prevent both reviewing and updating of the code happening at the same time
    1. Review and perform any changes requested by the reviewer(s).
    1. Commit all your changes as _one_ commit, this makes it much easier for the reviewer(s) to review the updates 
+1. Reviewer
+   1. Wait until submitter explicitly comments that they have responded to all reviewer comments, then go to item #2 in for the next round of review.
 
 ## Do not check in commented out code
 
